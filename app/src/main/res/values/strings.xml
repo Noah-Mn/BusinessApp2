@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BusinessApp2</string>
+    <string name="welcome_to_denox">Welcome to DenoX</string>
+    <string name="signin_to_continue">Signin to continue</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account? Signup</string>
+    <string name="Submit">Submit</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="Retypepassword">Retype Password</string>
+    <string name="denox">DenoX</string>
+    <string name="todo">TODO</string>
+</resources>

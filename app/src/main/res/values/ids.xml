@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="chatsandcalls" type="id" />
+    <item name="businessplan" type="id" />
+    <item name="tasks" type="id" />
+    <item name="menuicon" type="id" />
+    <item name="salesandexpences" type="id" />
+    <item name="invoice" type="id" />
+    <item name="projects" type="id" />
+</resources>
