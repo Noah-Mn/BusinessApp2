@@ -176,7 +176,7 @@
             <LinearLayout
 
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="155dp"
                 android:layout_marginLeft="0dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="0dp"
@@ -257,9 +257,157 @@
 
             </LinearLayout>
 
-            <WebView
+            <TableLayout
+                android:id="@+id/table"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="428dp"
+                android:layout_marginTop="-300dp"
+                android:layout_marginBottom="0dp">
+
+                <TableRow
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:text="My Tasks"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="70dp"
+                    android:background="#94B0F6">
+
+                        <LinearLayout
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="70dp"
+                                android:text="Pending"
+                                android:textColor="@color/black"
+                                android:textSize="15sp">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/pendingtasks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="200dp"
+                                android:layout_marginRight="0dp"
+                                android:text="5"
+                                android:textColor="@color/black"
+                                android:textSize="15sp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="70dp"
+                    android:background="#94B0F6">
+
+                    <LinearLayout
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="70dp"
+                            android:text="Ongoing"
+                            android:textColor="@color/black"
+                            android:textSize="15sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/ongoingtasks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginRight="0dp"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="15sp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="70dp"
+                    android:background="#94B0F6">
+
+                    <LinearLayout
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="70dp"
+                            android:text="Finished"
+                            android:textColor="@color/black"
+                            android:textSize="15sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/finishedtasks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginRight="0dp"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="15sp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="70dp"
+                    android:background="#94B0F6">
+
+                    <LinearLayout
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_height="20dp"
+                            android:layout_width="70dp"
+                            android:text="Canceled"
+                            android:textColor="@color/black"
+                            android:textSize="15sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/canceledtasks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginRight="0dp"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="15sp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
         </LinearLayout>
 
     </LinearLayout>
