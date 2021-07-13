@@ -44,6 +44,8 @@
         android:layout_width="340dp"
         android:layout_height="450dp"
         android:layout_marginTop="-200dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         app:cardElevation="10dp"
         android:background="@color/white"
         android:backgroundTint="#D8E3E0"
@@ -107,9 +109,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:text="@string/login"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
                 android:layout_marginTop="400dp"
                 app:cornerRadius="25dp"
-                android:layout_marginStart="135dp"/>
+                android:layout_marginLeft="130dp"
+                android:layout_marginRight="130dp"/>
 
     </androidx.cardview.widget.CardView>
 

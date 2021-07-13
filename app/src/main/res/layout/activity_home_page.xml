@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -71,8 +70,8 @@
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="0dp"
-                android:layout_marginRight="170dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="170dp"
                 android:layout_marginBottom="5dp"
                 android:background="#EBEDEF"
                 android:orientation="vertical">
@@ -86,7 +85,8 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/ic_menu_icon" />
+                    android:src="@drawable/ic_menu_icon"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/tasks"
@@ -126,7 +126,8 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/saleandexpence" />
+                    android:src="@drawable/saleandexpence"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/invoice"
@@ -213,7 +214,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Company Progress"
+                        android:text="@string/company_progress"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="12sp" />
@@ -249,7 +250,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Company Statistics"
+                        android:text="Monthly Profit"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="12sp" />
@@ -369,8 +370,7 @@
                         </TextView>
 
                     </LinearLayout>
-
-
+                    
                 </TableRow>
 
                 <TableRow
@@ -394,7 +394,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="200dp"
                             android:layout_marginRight="0dp"
-                            android:text="5"
+                            android:text="@string/_5"
                             android:textColor="@color/black"
                             android:textSize="15sp">
 
@@ -404,13 +404,10 @@
 
                 </TableRow>
 
-
             </TableLayout>
-
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
