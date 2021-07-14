@@ -63,12 +63,12 @@
 
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="300dp"
+            android:id="@+id/EmailAddress"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:ems="10"
             android:hint="@string/email_address"
-            android:textColorHint="@color/black"
+            android:textColorHint="#75787C"
             android:inputType="textEmailAddress"
             android:textColor="@color/black"
             android:autofillHints="" />
@@ -84,11 +84,11 @@
                 app:cardBackgroundColor="#F9FAFB">
             <EditText
                 android:id="@+id/Password"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:ems="10"
                 android:hint="@string/password"
-                android:textColorHint="@color/black"
+                android:textColorHint="#75787C"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
                 android:autofillHints="" />

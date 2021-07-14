@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusinessApp2">
         <activity
+            android:name=".Tasks"
+            android:exported="true" />
+        <activity
+            android:name=".Menu"
+            android:exported="true" />
+        <activity
             android:name=".HomePage"
             android:exported="true" />
         <activity
