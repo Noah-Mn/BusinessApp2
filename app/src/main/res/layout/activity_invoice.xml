@@ -210,9 +210,9 @@
                         android:background="#C7C9CA"
                         android:paddingTop="5dp"
                         android:layout_marginTop="20dp"
-                        android:text=" Sellect contacts bellow to start a conversation"
+                        android:text="@string/select_contacts_below_to_start_a_conversation"
                         android:textStyle="italic"
-
+                        android:textColor="#373C47"
                         />
 
                 </androidx.cardview.widget.CardView>
@@ -228,7 +228,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/calls"
-                        >
+                        android:contentDescription="@string/todo">
 
                     </ImageView>
 

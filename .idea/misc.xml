@@ -6,12 +6,17 @@
         <entry key="app/src/main/res/drawable/ic_menu_icon.xml" value="0.18" />
         <entry key="app/src/main/res/drawable/ic_usericon.xml" value="0.18" />
         <entry key="app/src/main/res/drawable/rectanglebutton.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_business_plan.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/activity_chats_and_calls.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_invoice.xml" value="0.15625" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.1539855072463768" />
+        <entry key="app/src/main/res/layout/activity_projects.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/activity_sales_and_expences.xml" value="0.15625" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_tasks.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_tasks.xml" value="0.25" />
       </map>
     </option>
   </component>

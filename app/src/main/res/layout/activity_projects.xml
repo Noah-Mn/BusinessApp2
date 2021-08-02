@@ -168,73 +168,88 @@
 
             <TextView
                 android:id="@+id/dashboard"
-                android:layout_width="150dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
+                android:layout_marginLeft="140dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="100dp"
+                android:layout_marginRight="140dp"
                 android:layout_marginBottom="-10dp"
-                android:text="@string/chats_and_calls"
+                android:text="@string/projects"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="normal" />
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="5dp">
+                android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="145dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="0dp"
-                    android:elevation="5dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="#C7C9CA"
-                        android:text="@string/calls_and_messages"
-                        android:paddingStart="4dp"
-                        android:paddingEnd="4dp"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="#C7C9CA"
-                        android:paddingTop="5dp"
-                        android:layout_marginTop="20dp"
-                        android:text=" Sellect contacts bellow to start a conversation"
-                        android:textStyle="italic"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/my_projects"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:textSize="13sp">
 
-                        />
+                </TextView>
 
-                </androidx.cardview.widget.CardView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="10dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:text="@string/add"
+                    android:textSize="12sp">
+
+                </Button>
+
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="145dp"
-                    android:layout_marginEnd="0dp"
-                    android:elevation="10dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="25dp">
 
-                    <ImageView
+                    <EditText
+                        android:id="@+id/search"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/calls"
-                        >
-
-                    </ImageView>
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:autofillHints=" "
+                        android:background="#FAEDF0F3"
+                        android:ems="10"
+                        android:hint="@string/search"
+                        android:inputType="textPersonName"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="#2C2D2E"
+                        android:textSize="15sp"
+                        android:textStyle="italic"
+                        app:cornerRadius="25dp" />
 
                 </androidx.cardview.widget.CardView>
 
-            </RelativeLayout>
+            </LinearLayout>
 
         </LinearLayout>
 

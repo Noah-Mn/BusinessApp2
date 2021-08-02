@@ -76,7 +76,6 @@
             android:background="#EBEDEF"
             android:orientation="vertical">
 
-
             <ImageView
                 android:id="@+id/menuicon"
                 android:layout_width="25dp"
@@ -86,7 +85,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="20dp"
                 android:src="@drawable/ic_menu_icon"
-                android:contentDescription="TODO" />
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/tasks"
@@ -96,7 +95,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/task" />
+                android:src="@drawable/task"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/chatsandcalls"
@@ -106,7 +106,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/chats" />
+                android:src="@drawable/chats"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/businessplan"
@@ -116,7 +117,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/plan" />
+                android:src="@drawable/plan"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/salesandexpences"
@@ -127,7 +129,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:src="@drawable/saleandexpence"
-                android:contentDescription="TODO" />
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/invoice"
@@ -137,7 +139,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/invoice" />
+                android:src="@drawable/invoice"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/projects"
@@ -147,19 +150,18 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/project" />
+                android:src="@drawable/project"
+                android:contentDescription="@string/todo" />
         </LinearLayout>
-
 
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="-168dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginStart="-168dp"
+            android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:orientation="vertical">
-
 
             <TextView
                 android:id="@+id/dashboard"
@@ -169,7 +171,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="140dp"
                 android:layout_marginBottom="-10dp"
-                android:text="Tasks"
+                android:text="@string/tasks"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="15sp"
@@ -186,7 +188,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:text="My Tasks"
+                    android:text="@string/my_tasks"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:layout_marginLeft="7dp"
@@ -205,48 +207,66 @@
                     android:elevation="10dp"
                     android:paddingLeft="0dp"
                     android:paddingRight="0dp"
-                    android:text="New Task"
+                    android:text="@string/new_task"
                     android:textSize="12sp">
 
                 </Button>
 
-                <SearchView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:searchIcon="@drawable/search">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="25dp">
 
                     <EditText
                         android:id="@+id/search"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="-147dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
                         android:layout_marginRight="0dp"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="0dp"
                         android:autofillHints=" "
                         android:background="#FAEDF0F3"
                         android:ems="10"
-                        android:hint="Search"
-                        android:textStyle="italic"
+                        android:hint="@string/search"
                         android:inputType="textPersonName"
-                        android:paddingLeft="60dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="10dp"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textColorHint="#2C2D2E"
                         android:textSize="15sp"
+                        android:textStyle="italic"
                         app:cornerRadius="25dp" />
-                </SearchView>
+
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="10dp"
+                android:background="#00FFFFFF"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
 
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
+
+</LinearLayout>

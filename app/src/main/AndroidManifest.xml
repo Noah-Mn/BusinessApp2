@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusinessApp2">
         <activity
+            android:name=".SalesAndExpences"
+            android:exported="true" />
+        <activity
+            android:name=".Invoice"
+            android:exported="true" />
+        <activity
+            android:name=".BusinessPlan"
+            android:exported="true" />
+        <activity
+            android:name=".Projects"
+            android:exported="true" />
+        <activity
+            android:name=".Chats_and_Calls"
+            android:exported="true" />
+        <activity
             android:name=".Tasks"
             android:exported="true" />
         <activity

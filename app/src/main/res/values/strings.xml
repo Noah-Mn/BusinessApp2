@@ -1,17 +1,36 @@
 <resources>
-    <string name="app_name">BusinessApp2</string>
-    <string name="welcome_to_denox">Welcome to DenoX</string>
-    <string name="signin_to_continue">Signin to continue</string>
-    <string name="email_address">Email Address</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="don_t_have_an_account_signup">Don\'t have an account? Signup</string>
-    <string name="Submit">Submit</string>
+    <string name="app_name" translatable="false">BusinessApp2</string>
+    <string name="welcome_to_denox" translatable="false">Welcome to DenoX</string>
+    <string name="signin_to_continue" translatable="false">Signin to continue</string>
+    <string name="email_address" translatable="false">Email Address</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="don_t_have_an_account_signup" translatable="false">Don\'t have an account? Signup</string>
+    <string name="Submit" translatable="false">Submit</string>
     <string name="SignUp">Sign Up</string>
     <string name="username">Username</string>
     <string name="Retypepassword">Retype Password</string>
     <string name="denox">DenoX</string>
-    <string name="todo">TODO</string>
     <string name="company_progress">Company Progress</string>
     <string name="_5">5</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="TODO">TODO</string>
+    <string name="new_task">New Task</string>
+    <string name="search">Search</string>
+    <string name="tasks">Tasks</string>
+    <string name="chats_and_calls">Chats and Calls</string>
+    <string name="calls_and_messages">calls and Messages</string>
+    <string name="success_message">Records have been saved Successfully</string>
+    <string name="error_email_exists">Email already exists</string>
+    <string name="error_password_match">Passwords don\'t match</string>
+    <string name="error_message_name">name</string>
+    <string name="error_message_email">email</string>
+    <string name="error_message_password">password</string>
+    <string name="error_valid_email_password">invalid email and password</string>
+    <string name="projects">Projects</string>
+    <string name="add">Add</string>
+    <string name="my_projects">My Projects</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="select_contacts_below_to_start_a_conversation">Select contacts below to start a conversation</string>
+    <string name="todo">TODO</string>
 </resources>

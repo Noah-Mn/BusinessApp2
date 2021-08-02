@@ -1,64 +1,41 @@
 package com.example.businessapp2;
 
-import androidx.appcompat.app.AppCompatActivity;
-import com.example.businessapp2.R;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
+    TextView gotosignup;
+    DatabaseHelper databaseHelper;
+    TextView email,password;
     Button login;
-  TextView gotosignup;
-    EditText email, password;
-    myDbAdapter helper;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        databaseHelper = new DatabaseHelper(this);
         email = findViewById(R.id.EmailAddress);
         password = findViewById(R.id.Password);
-
         gotosignup = findViewById(R.id.gotosignup);
         login = findViewById(R.id.login);
 
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        gotosignup.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, Signup.class)));
+
+        login.setOnClickListener(v -> {
+            String emailaddress = email.getText().toString();
+            String passwd = password.getText().toString();
+            boolean checkemailpassword = databaseHelper.checkemailpassword(emailaddress,passwd);
+            if (checkemailpassword){
                 startActivity(new Intent(LoginActivity.this, HomePage.class));
-            }
+            }else
+                Toast.makeText(getApplicationContext(),"Please enter the correct email or password",Toast.LENGTH_SHORT).show();
+
         });
-
-        gotosignup.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                startActivity(new Intent(LoginActivity.this, Signup.class));
-            }
-        });
-
     }
-    public void login(View v){
-        String t1 = email.getText().toString();
-        String t2 = password.getText().toString();
 
-        if(t1.isEmpty() || t2.isEmpty()){
-            Message.message(getApplicationContext(), "Please enter Both Email and Password");
-        }
-        else{
-            long id = helper.insertData(t1,t2);
-            if (id <= 0){
-                Message.message(getApplicationContext(), "Insertion unsuccessful");
-                email.setText(" ");
-                password.setText(" ");
-            }else {
-                Message.message(getApplicationContext(), "Insertion successful");
-                email.setText(" ");
-                password.setText(" ");
-            }
-        }
-    }
+
 }
