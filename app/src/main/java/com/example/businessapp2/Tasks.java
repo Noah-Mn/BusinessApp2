@@ -22,6 +22,8 @@ public class Tasks extends AppCompatActivity {
 
         businessplan.setOnClickListener(v -> startActivity(new Intent(Tasks.this, BusinessPlan.class)));
 
+        chatsandcalls.setOnClickListener(v -> startActivity(new Intent(Tasks.this, Chats_and_Calls.class)));
+
         invoice.setOnClickListener(v -> startActivity(new Intent(Tasks.this, Invoice.class)));
 
         salesandexpences.setOnClickListener(v -> startActivity(new Intent(Tasks.this, SalesAndExpences.class)));

@@ -107,8 +107,10 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:clickable="true"
                 android:src="@drawable/chats"
-                android:contentDescription="@string/todo" />
+                android:contentDescription="@string/todo"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/businessplan"
@@ -166,75 +168,48 @@
             android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/dashboard"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="100dp"
-                android:layout_marginBottom="-10dp"
-                android:text="@string/chats_and_calls"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="normal" />
 
-            <RelativeLayout
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="5dp">
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="fill_horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="145dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="0dp"
-                    android:elevation="5dp">
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="20dp">
+
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="#C7C9CA"
-                        android:text="@string/calls_and_messages"
-                        android:paddingStart="4dp"
-                        android:paddingEnd="4dp"
-                        />
-                    <TextView
+                        android:id="@+id/expences"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="#C7C9CA"
-                        android:paddingTop="5dp"
-                        android:layout_marginTop="20dp"
-                        android:text=" Sellect contacts bellow to start a conversation"
-                        android:textStyle="italic"
+                        android:clickable="true"
+                        android:paddingStart="10dp"
+                        android:text="Expences"
+                        android:textSize="20sp">
 
-                        />
+                    </TextView>
 
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="145dp"
-                    android:layout_marginEnd="0dp"
-                    android:elevation="10dp">
-
-                    <ImageView
+                    <TextView
+                        android:id="@+id/sales"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/calls"
-                        >
+                        android:paddingStart="120dp"
+                        android:text="Sales"
+                        android:textSize="20sp">
 
-                    </ImageView>
-
+                    </TextView>
                 </androidx.cardview.widget.CardView>
 
-            </RelativeLayout>
+
+
+
+
+            </LinearLayout>
 
         </LinearLayout>
 

@@ -165,78 +165,73 @@
             android:layout_marginBottom="5dp"
             android:orientation="vertical">
 
-
-            <TextView
-                android:id="@+id/dashboard"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="100dp"
-                android:layout_marginBottom="-10dp"
-                android:text="@string/chats_and_calls"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="normal" />
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="5dp">
+                android:layout_height="48dp"
+                android:gravity="fill_horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="145dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
+                <TextView
+                    android:id="@+id/invoices"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginEnd="0dp"
-                    android:elevation="5dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="#C7C9CA"
-                        android:text="@string/calls_and_messages"
-                        android:paddingStart="4dp"
-                        android:paddingEnd="4dp"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="#C7C9CA"
-                        android:paddingTop="5dp"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/select_contacts_below_to_start_a_conversation"
-                        android:textStyle="italic"
-                        android:textColor="#373C47"
-                        />
+                    android:layout_marginBottom="-10dp"
+                    android:text="@string/invoices"
+                    android:textAlignment="center"
+                    android:textColor="#0628ED"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
-                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/generator"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="-10dp"
+                    android:text="@string/generator"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/menu2"
+                    android:contentDescription="@string/todo">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="145dp"
-                    android:layout_marginEnd="0dp"
-                    android:elevation="10dp">
+                </ImageView>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/calls"
-                        android:contentDescription="@string/todo">
+            </LinearLayout>
 
-                    </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:background="#AB015EFF"
+                android:gravity="center">
 
-                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/create_invoice"
+                    android:backgroundTint="#B251C504"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_your_invoice">
 
-            </RelativeLayout>
+                </Button>
+
+            </LinearLayout>
+
+
+
+
 
         </LinearLayout>
+
 
     </LinearLayout>
 

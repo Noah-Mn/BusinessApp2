@@ -1,13 +1,19 @@
 package com.example.businessapp2;
 
+import android.app.DownloadManager;
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Invoice extends AppCompatActivity {
     ImageView tasks, chatsandcalls, menu, projects, businessplan, invoice, salesandexpences;
+    Button create_invoice;
+    DownloadManager downloadManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +25,15 @@ public class Invoice extends AppCompatActivity {
         businessplan = findViewById(R.id.businessplan);
         invoice = findViewById(R.id.invoice);
         salesandexpences = findViewById(R.id.salesandexpences);
+        create_invoice = findViewById(R.id.create_invoice);
 
+        create_invoice.setOnClickListener(v -> {
+          downloadManager = (DownloadManager)getSystemService(Context.DOWNLOAD_SERVICE);
+            Uri uri = Uri.parse("https://www.invoicesimple.com/wp-content/uploads/2018/06/Invoice-template-doc-top.docx");
+            DownloadManager.Request request = new DownloadManager.Request(uri);
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+            Long reference = downloadManager.enqueue(request);
+        });
         chatsandcalls.setOnClickListener(v -> startActivity(new Intent(Invoice.this, Chats_and_Calls.class)));
 
         businessplan.setOnClickListener(v -> startActivity(new Intent(Invoice.this, BusinessPlan.class)));

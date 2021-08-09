@@ -187,33 +187,23 @@
                 android:layout_marginBottom="5dp">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="145dp"
+                    android:layout_width="138dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
-                    android:layout_marginEnd="0dp"
+                    android:backgroundTint="#6DAB47BC"
                     android:elevation="5dp">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginEnd="0dp"
-                        android:background="#C7C9CA"
-                        android:text="@string/calls_and_messages"
                         android:paddingStart="4dp"
                         android:paddingEnd="4dp"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="#C7C9CA"
-                        android:paddingTop="5dp"
-                        android:layout_marginTop="20dp"
-                        android:text=" Sellect contacts bellow to start a conversation"
-                        android:textStyle="italic"
+                        android:text="@string/username"
+                        android:textColor="@color/black"
+                        android:textAlignment="center" />
 
-                        />
 
                 </androidx.cardview.widget.CardView>
 
@@ -222,15 +212,30 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="145dp"
                     android:layout_marginEnd="0dp"
+                    android:backgroundTint="#23000000"
                     android:elevation="10dp">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/calls"
-                        >
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/calls">
 
                     </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="#00000000"
+                        android:paddingTop="0dp"
+                        android:text=" Start conversation by selecting contacts from the list"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+
+                        />
 
                 </androidx.cardview.widget.CardView>
 

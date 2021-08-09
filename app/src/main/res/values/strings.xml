@@ -32,5 +32,11 @@
     <string name="my_projects">My Projects</string>
     <string name="dashboard">Dashboard</string>
     <string name="select_contacts_below_to_start_a_conversation">Select contacts below to start a conversation</string>
+    <string name="generator">generator</string>
+    <string name="invoices">Invoices</string>
+    <string name="create_your_invoice">Create Your Invoice</string>
+    <string name="monthly_profit">Monthly Profit</string>
+    <string name="pending">Pending</string>
     <string name="todo">TODO</string>
+    <string name="ongoing">Ongoing</string>
 </resources>
