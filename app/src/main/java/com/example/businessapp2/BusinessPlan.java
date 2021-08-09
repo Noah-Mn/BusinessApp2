@@ -50,4 +50,9 @@ public class BusinessPlan extends AppCompatActivity {
 
         projects.setOnClickListener(v -> startActivity(new Intent(BusinessPlan.this, Projects.class)));
     }
+    public void onBackPressed(){
+        Intent intent = new Intent(BusinessPlan.this, HomePage.class);
+        startActivity(intent);
+        finish();
+    }
 }

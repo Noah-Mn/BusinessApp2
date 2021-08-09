@@ -34,4 +34,9 @@ public class Chats_and_Calls extends AppCompatActivity {
 
         projects.setOnClickListener(v -> startActivity(new Intent(Chats_and_Calls.this, Projects.class)));
     }
+    public void onBackPressed(){
+        Intent intent = new Intent(Chats_and_Calls.this, HomePage.class);
+        startActivity(intent);
+        finish();
+    }
 }

@@ -48,4 +48,9 @@ public class Invoice extends AppCompatActivity {
 
         projects.setOnClickListener(v -> startActivity(new Intent(Invoice.this, Projects.class)));
     }
+    public void onBackPressed(){
+        Intent intent = new Intent(Invoice.this, HomePage.class);
+        startActivity(intent);
+        finish();
+    }
 }

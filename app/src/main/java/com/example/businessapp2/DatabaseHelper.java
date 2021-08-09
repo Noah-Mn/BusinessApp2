@@ -3,6 +3,7 @@ package com.example.businessapp2;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -43,5 +44,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor cursor = database.rawQuery("SELECT * FROM user WHERE email=? AND password=?",new String[]{email,password});
         if (cursor.getCount()>0) return true;
         else return false;
+    }
+    public String getUsername() throws SQLException{
+        String username = " ";
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM user WHERE username=?",new String[]{username});
+        if (cursor.moveToFirst()){
+            do {
+                username = cursor.getString(0);
+            }while (cursor.moveToNext());
+        }cursor.close();
+        return username;
     }
 }

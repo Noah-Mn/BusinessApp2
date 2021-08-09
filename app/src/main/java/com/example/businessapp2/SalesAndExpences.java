@@ -35,4 +35,9 @@ public class SalesAndExpences extends AppCompatActivity {
 
         projects.setOnClickListener(v -> startActivity(new Intent(SalesAndExpences.this, Projects.class)));
     }
+    public void onBackPressed(){
+        Intent intent = new Intent(SalesAndExpences.this, HomePage.class);
+        startActivity(intent);
+        finish();
+    }
 }

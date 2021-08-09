@@ -61,4 +61,9 @@ public class Menu extends AppCompatActivity {
         projecttext.setOnClickListener(v -> startActivity(new Intent(Menu.this, Projects.class)));
 
     }
+    public void onBackPressed(){
+        Intent intent = new Intent(Menu.this, HomePage.class);
+        startActivity(intent);
+        finish();
+    }
 }

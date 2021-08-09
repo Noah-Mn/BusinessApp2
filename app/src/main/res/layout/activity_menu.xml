@@ -190,7 +190,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="20dp"
-                android:text="Calls and Chats"
+                android:text="@string/calls_and_chats"
                 android:textColor="@color/black" />
 
             <TextView
@@ -202,7 +202,7 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/black"
-                android:text="Project Plan" />
+                android:text="@string/business_plan" />
 
             <TextView
                 android:id="@+id/salesexpences"
@@ -255,7 +255,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="50dp"
-                android:text="Dashboard"
+                android:text="@string/dashboard"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="15sp"

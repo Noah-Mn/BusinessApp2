@@ -39,4 +39,6 @@
     <string name="pending">Pending</string>
     <string name="todo">TODO</string>
     <string name="ongoing">Ongoing</string>
+    <string name="business_plan">Business Plan</string>
+    <string name="calls_and_chats">Calls and Chats</string>
 </resources>

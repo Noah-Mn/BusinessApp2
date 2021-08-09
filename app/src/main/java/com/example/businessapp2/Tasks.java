@@ -34,4 +34,9 @@ public class Tasks extends AppCompatActivity {
 
         projects.setOnClickListener(v -> startActivity(new Intent(Tasks.this, Projects.class)));
     }
+    public void onBackPressed(){
+        Intent intent = new Intent(Tasks.this, HomePage.class);
+        startActivity(intent);
+        finish();
+    }
 }

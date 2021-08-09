@@ -20,7 +20,7 @@ import java.sql.Statement;
 public class HomePage extends AppCompatActivity {
     ImageView tasks, chatsandcalls, menu, projects, businessplan, invoice, salesandexpences;
     TextView username;
-    DatabaseHelper databaseHelper;
+    DatabaseHelper databaseHelper = new DatabaseHelper(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +50,16 @@ public class HomePage extends AppCompatActivity {
 
         projects.setOnClickListener(v -> startActivity(new Intent(HomePage.this, Projects.class)));
 
-    }
 
+
+    }
+    public void displayUsername(View view){
+        username.setText(databaseHelper.getUsername());
+    }
+    public void onBackPressed(){
+        Intent intent = new Intent(HomePage.this, HomePage.class);
+        startActivity(intent);
+        finish();
+    }
 
 }
