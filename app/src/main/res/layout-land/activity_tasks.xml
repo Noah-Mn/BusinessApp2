@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -37,7 +41,7 @@
             android:layout_weight="1"
             android:layout_marginTop="33dp"
             android:layout_marginBottom="0dp"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="350dp"
             android:layout_marginEnd="0dp"
             android:background="@drawable/blue"
             app:srcCompat="@drawable/ic_usericon"
@@ -167,9 +171,9 @@
                 android:id="@+id/dashboard"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="140dp"
+                android:layout_marginLeft="290dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="140dp"
+                android:layout_marginRight="290dp"
                 android:layout_marginBottom="-10dp"
                 android:text="@string/tasks"
                 android:textAlignment="center"
@@ -271,3 +275,4 @@
     </LinearLayout>
 
 </LinearLayout>
+</ScrollView>

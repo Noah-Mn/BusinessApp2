@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="vertical"
     android:background="@color/white">
@@ -37,7 +41,7 @@
             android:layout_weight="1"
             android:layout_marginTop="33dp"
             android:layout_marginBottom="0dp"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="350dp"
             android:layout_marginEnd="0dp"
             android:background="@drawable/blue"
             app:srcCompat="@drawable/ic_usericon"
@@ -126,7 +130,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="20dp"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/todo"
                 android:src="@drawable/saleandexpence" />
 
             <ImageView
@@ -153,8 +157,8 @@
         <LinearLayout
             android:layout_width="140dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="-170dp"
-            android:layout_marginRight="0dp"
+            android:layout_marginStart="-170dp"
+            android:layout_marginEnd="0dp"
             android:layout_marginBottom="5dp"
             android:background="#EBEDEF"
             android:orientation="vertical">
@@ -169,7 +173,7 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/black"
-                android:text="Expand Menu" />
+                android:text="@string/expand_menu" />
 
             <TextView
                 android:id="@+id/tasktext"
@@ -180,7 +184,7 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/black"
-                android:text="Tasks" />
+                android:text="@string/tasks" />
 
             <TextView
                 android:id="@+id/chatscalls"
@@ -213,7 +217,7 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/black"
-                android:text="Sales and Expences" />
+                android:text="@string/sales_and_expences" />
 
             <TextView
                 android:id="@+id/invoicetext"
@@ -224,7 +228,7 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/black"
-                android:text="Invoice" />
+                android:text="@string/invoice" />
 
             <TextView
                 android:id="@+id/projecttext"
@@ -235,7 +239,7 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/black"
-                android:text="Projects" />
+                android:text="@string/projects" />
         </LinearLayout>
 
         <LinearLayout
@@ -252,9 +256,9 @@
                 android:id="@+id/dashboard"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="200dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginRight="200dp"
                 android:text="@string/dashboard"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -265,9 +269,9 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="357dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 android:layout_marginBottom="300dp"
                 android:orientation="vertical">
 
@@ -284,11 +288,11 @@
                     <ProgressBar
                         android:id="@+id/progess"
                         style="?android:attr/progressBarStyle"
-                        android:layout_width="64dp"
-                        android:layout_height="45dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_width="93dp"
+                        android:layout_height="63dp"
+                        android:layout_marginLeft="200dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginRight="50dp"
+                        android:layout_marginRight="200dp"
                         android:layout_marginBottom="40dp"
                         android:layout_weight="1"
                         android:max="100"
@@ -306,7 +310,7 @@
                         android:text="@string/company_progress"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -322,11 +326,11 @@
                     <ProgressBar
                         android:id="@+id/profit"
                         style="?android:attr/progressBarStyle"
-                        android:layout_width="64dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
+                        android:layout_width="91dp"
+                        android:layout_height="63dp"
+                        android:layout_marginLeft="200dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginRight="50dp"
+                        android:layout_marginRight="200dp"
                         android:layout_marginBottom="40dp"
                         android:layout_weight="1" />
 
@@ -339,10 +343,10 @@
                         android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Monthly Profit"
+                        android:text="@string/monthly_profit"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -353,3 +357,4 @@
     </LinearLayout>
 
 </LinearLayout>
+</ScrollView>

@@ -41,4 +41,11 @@
     <string name="ongoing">Ongoing</string>
     <string name="business_plan">Business Plan</string>
     <string name="calls_and_chats">Calls and Chats</string>
+
+
+    <string name="invoice">Invoice</string>
+    <string name="sales_and_expences">Sales and Expences</string>
+
+    <string name="expand_menu">Expand Menu</string>
+
 </resources>

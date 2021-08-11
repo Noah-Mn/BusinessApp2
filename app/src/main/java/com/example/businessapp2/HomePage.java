@@ -50,12 +50,8 @@ public class HomePage extends AppCompatActivity {
 
         projects.setOnClickListener(v -> startActivity(new Intent(HomePage.this, Projects.class)));
 
-
-
     }
-    public void displayUsername(View view){
-        username.setText(databaseHelper.getUsername());
-    }
+
     public void onBackPressed(){
         Intent intent = new Intent(HomePage.this, HomePage.class);
         startActivity(intent);
