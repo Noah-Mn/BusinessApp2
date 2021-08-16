@@ -228,28 +228,13 @@
                     android:layout_marginStart="9dp"
                     android:layout_marginEnd="5dp"
                     app:cardCornerRadius="25dp">
-
-                    <EditText
-                        android:id="@+id/search"
+                    <SearchView
+                        android:id="@+id/searchView"
                         android:layout_width="match_parent"
+                        android:queryHint="Search"
+                        android:iconifiedByDefault="false"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="0dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginRight="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:autofillHints=" "
-                        android:background="#FAEDF0F3"
-                        android:ems="10"
-                        android:hint="@string/search"
-                        android:inputType="textPersonName"
-                        android:paddingStart="0dp"
-                        android:paddingEnd="10dp"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textColorHint="#2C2D2E"
-                        android:textSize="15sp"
-                        android:textStyle="italic"
-                        app:cornerRadius="25dp" />
+                        />
 
                 </androidx.cardview.widget.CardView>
 

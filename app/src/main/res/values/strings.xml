@@ -16,6 +16,11 @@
     <string name="my_tasks">My Tasks</string>
     <string name="TODO">TODO</string>
     <string name="new_task">New Task</string>
+    <string-array name="priority">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
     <string name="search">Search</string>
     <string name="tasks">Tasks</string>
     <string name="chats_and_calls">Chats and Calls</string>
@@ -41,11 +46,25 @@
     <string name="ongoing">Ongoing</string>
     <string name="business_plan">Business Plan</string>
     <string name="calls_and_chats">Calls and Chats</string>
-
-
     <string name="invoice">Invoice</string>
     <string name="sales_and_expences">Sales and Expences</string>
-
     <string name="expand_menu">Expand Menu</string>
+    <string name="_0">0</string>
+    <string name="estimated_cost_mk">Estimated Cost (MK)</string>
+    <string name="deliverable">Deliverable</string>
+    <string name="deliverable">Deliverable</string>
+    <string name="deadline">Deadline</string>
+    <string name="select_date">Select Date</string>
+    <string name="priority">Priority</string>
+    <string name="finished">Finished</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="status">Status</string>
+    <string name="project_name">Project Name</string>
+    <string name="name">Name</string>
+    <string name="project_task_template">Project Task Template</string>
+    <string name="task_details_goes_here">Task details goes here</string>
+    <string name="description">Description</string>
+    <string name="add">Add</string>
+
 
 </resources>
