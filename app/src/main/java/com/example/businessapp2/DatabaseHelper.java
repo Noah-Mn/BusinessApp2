@@ -56,4 +56,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }cursor.close();
         return username;
     }
+    public Cursor getdata(){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT username FROM user", null);
+        return cursor;
+    }
 }

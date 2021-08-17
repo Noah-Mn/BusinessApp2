@@ -201,6 +201,7 @@
                 </TextView>
 
                 <Button
+                    android:id="@+id/addproject"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_marginLeft="10dp"
@@ -244,14 +245,14 @@
                 android:elevation="10dp"
 
                 android:orientation="horizontal">
-                <androidx.cardview.widget.CardView
+                <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:elevation="10dp"
                     android:backgroundTint="#206201FF"
                     app:cardCornerRadius="10dp">
 
-                </androidx.cardview.widget.CardView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </LinearLayout>
 

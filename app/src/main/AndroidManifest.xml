@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusinessApp2">
         <activity
+            android:name=".NewProject"
+            android:exported="true" />
+        <activity
             android:name=".NewTask"
             android:exported="true" />
         <activity

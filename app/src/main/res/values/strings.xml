@@ -43,7 +43,6 @@
     <string name="monthly_profit">Monthly Profit</string>
     <string name="pending">Pending</string>
     <string name="todo">TODO</string>
-    <string name="ongoing">Ongoing</string>
     <string name="business_plan">Business Plan</string>
     <string name="calls_and_chats">Calls and Chats</string>
     <string name="invoice">Invoice</string>
@@ -52,19 +51,23 @@
     <string name="_0">0</string>
     <string name="estimated_cost_mk">Estimated Cost (MK)</string>
     <string name="deliverable">Deliverable</string>
-    <string name="deliverable">Deliverable</string>
     <string name="deadline">Deadline</string>
     <string name="select_date">Select Date</string>
     <string name="priority">Priority</string>
     <string name="finished">Finished</string>
-    <string name="ongoing">Ongoing</string>
     <string name="status">Status</string>
     <string name="project_name">Project Name</string>
     <string name="name">Name</string>
     <string name="project_task_template">Project Task Template</string>
     <string name="task_details_goes_here">Task details goes here</string>
     <string name="description">Description</string>
-    <string name="add">Add</string>
-
-
+    <string name="ongoing">Ongoing</string>
+    <string name="Product">product</string>
+    <string name="project_template">project task</string>
+    <string name="Project_template">Project Template</string>
+    <string name="Products">products</string>
+    <string name="product">Product</string>
+    <string name="products">Products</string>
+    <string name="Ongoing">Ongoing</string>
+    <string name="task_name">Task Name</string>
 </resources>

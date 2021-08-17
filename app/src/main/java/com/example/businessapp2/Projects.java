@@ -2,12 +2,14 @@ package com.example.businessapp2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Projects extends AppCompatActivity {
     ImageView tasks, chatsandcalls, menu, projects, businessplan, invoice, salesandexpences;
+    Button addproject;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,7 @@ public class Projects extends AppCompatActivity {
         businessplan = findViewById(R.id.businessplan);
         invoice = findViewById(R.id.invoice);
         salesandexpences = findViewById(R.id.salesandexpences);
+        addproject = findViewById(R.id.addproject);
 
         chatsandcalls.setOnClickListener(v -> startActivity(new Intent(Projects.this, Chats_and_Calls.class)));
 
@@ -33,6 +36,8 @@ public class Projects extends AppCompatActivity {
         tasks.setOnClickListener(v -> startActivity(new Intent(Projects.this, Tasks.class)));
 
         projects.setOnClickListener(v -> startActivity(new Intent(Projects.this, Projects.class)));
+
+        addproject.setOnClickListener(v -> startActivity(new Intent(Projects.this, NewProject.class)));
     }
     public void onBackPressed(){
         Intent intent = new Intent(Projects.this, HomePage.class);

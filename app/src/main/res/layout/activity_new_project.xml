@@ -6,20 +6,20 @@
     android:background="@color/white">
 
     <TextView
-        android:id="@+id/task"
+        android:id="@+id/project"
         android:layout_width="338dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="@string/project_task_template"
+        android:text="@string/Project_template"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="15sp" />
 
     <TextView
-        android:id="@+id/taskname"
+        android:id="@+id/projectname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -31,14 +31,14 @@
         android:textColor="@color/black" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/projectName"
         android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="-30dp"
         android:layout_marginEnd="4dp"
         android:autofillHints=" "
-        android:hint="@string/task_name"
+        android:hint="@string/project_name"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -46,7 +46,7 @@
         android:textStyle="italic"/>
 
     <TextView
-        android:id="@+id/status"
+        android:id="@+id/pstatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -57,24 +57,24 @@
         android:textColor="@color/black" />
 
     <TextView
-        android:id="@+id/ongoing"
+        android:id="@+id/pongoing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="-19dp"
-        android:text="@string/ongoing"
+        android:text="@string/Ongoing"
         android:textAlignment="center"
         android:textColor="@color/black" />
 
     <CheckBox
-        android:id="@+id/checkBox1"
+        android:id="@+id/pcheckBox1"
         android:layout_width="30dp"
         android:layout_height="20dp"
         android:layout_marginStart="125dp"
         android:layout_marginTop="-20dp"
         android:layout_marginEnd="5dp" />
     <TextView
-        android:id="@+id/Finished"
+        android:id="@+id/pfinished"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
@@ -84,7 +84,7 @@
         android:textColor="@color/black" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/pcheckBox2"
         android:layout_width="30dp"
         android:layout_height="20dp"
         android:layout_marginStart="255dp"
@@ -111,7 +111,7 @@
         android:layout_marginEnd="-44dp" />
 
     <TextView
-        android:id="@+id/Deadline"
+        android:id="@+id/pDeadline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -122,7 +122,7 @@
         android:textColor="@color/black" />
 
     <TextView
-        android:id="@+id/setDate"
+        android:id="@+id/psetDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -135,25 +135,25 @@
         android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/Deliverable"
+        android:id="@+id/pproduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="30dp"
-        android:text="@string/deliverable"
+        android:text="@string/product"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/black" />
 
     <EditText
-        android:id="@+id/editTextDeliverable"
+        android:id="@+id/products"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="-30dp"
         android:layout_marginEnd="4dp"
         android:autofillHints=" "
-        android:hint="@string/deliverable"
+        android:hint="@string/products"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -173,7 +173,7 @@
         android:textColor="@color/black" />
 
     <EditText
-        android:id="@+id/editTextCost"
+        android:id="@+id/pCost"
         android:layout_width="123dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -200,7 +200,7 @@
         android:textColor="@color/black" />
 
     <EditText
-        android:id="@+id/editTextDescription"
+        android:id="@+id/pDescription"
         android:layout_width="297dp"
         android:layout_height="176dp"
         android:layout_marginStart="100dp"
@@ -217,7 +217,7 @@
         />
 
     <Button
-        android:id="@+id/addtask"
+        android:id="@+id/addprojectp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add"

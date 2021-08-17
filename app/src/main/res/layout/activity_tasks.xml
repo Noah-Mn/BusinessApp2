@@ -241,16 +241,15 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
                 android:elevation="10dp"
-
                 android:orientation="horizontal">
-                <androidx.cardview.widget.CardView
+
+                <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:elevation="10dp"
                     android:backgroundTint="#206201FF"
                     app:cardCornerRadius="10dp">
-
-                </androidx.cardview.widget.CardView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </LinearLayout>
 
