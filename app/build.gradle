@@ -3,6 +3,16 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('/home/noah/Desktop/Android_app_keystore.jks')
+            storePassword 'AJRU6TBK'
+            keyAlias 'key0'
+            keyPassword 'AJRU6TBK'
+        }
+        'Noah Mnyenyembe' {
+        }
+    }
     compileSdk 30
     buildToolsVersion "30.0.3"
 
