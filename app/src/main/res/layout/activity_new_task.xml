@@ -32,7 +32,7 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="329dp"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="-30dp"
@@ -104,7 +104,7 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="133dp"
+        android:layout_width="330dp"
         android:layout_height="42dp"
         android:layout_marginStart="70dp"
         android:layout_marginTop="-30dp"
@@ -123,16 +123,16 @@
 
     <TextView
         android:id="@+id/setDate"
-        android:layout_width="wrap_content"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="-19dp"
         android:layout_marginEnd="-17dp"
         android:text="@string/select_date"
-        android:textStyle="italic"
         android:textAlignment="center"
         android:textColor="#C8000000"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/Deliverable"
@@ -174,7 +174,7 @@
 
     <EditText
         android:id="@+id/editTextCost"
-        android:layout_width="123dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="-30dp"
@@ -201,7 +201,7 @@
 
     <EditText
         android:id="@+id/editTextDescription"
-        android:layout_width="297dp"
+        android:layout_width="300dp"
         android:layout_height="176dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="-30dp"
