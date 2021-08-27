@@ -15,7 +15,7 @@
         <entry key="app/src/main/res/layout-land/activity_sales_and_expences.xml" value="0.14462081128747795" />
         <entry key="app/src/main/res/layout-land/activity_tasks.xml" value="0.14462081128747795" />
         <entry key="app/src/main/res/layout-normal/activity_business_plan.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_business_plan.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/activity_business_plan.xml" value="0.3872491145218418" />
         <entry key="app/src/main/res/layout/activity_chats_and_calls.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/layout/activity_expences.xml" value="0.3923444976076555" />
         <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.18" />
@@ -26,11 +26,12 @@
         <entry key="app/src/main/res/layout/activity_new_project.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_new_task.xml" value="0.3416666666666667" />
         <entry key="app/src/main/res/layout/activity_projects.xml" value="0.17135416666666667" />
-        <entry key="app/src/main/res/layout/activity_sales.xml" value="0.15572916666666667" />
+        <entry key="app/src/main/res/layout/activity_sales.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_sales_and_expences.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_search.xml" value="0.17083333333333334" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_tasks.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/my_row.xml" value="0.5834363411619283" />
       </map>
     </option>
   </component>

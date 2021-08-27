@@ -1,5 +1,6 @@
 package com.example.businessapp2;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -7,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class HomePage extends AppCompatActivity {
     ImageView tasks, chatsandcalls, menu, projects, businessplan, invoice, taskshort, salesandexpences;
     TextView username;
-
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,8 @@ public class HomePage extends AppCompatActivity {
         invoice = findViewById(R.id.invoice);
         salesandexpences = findViewById(R.id.salesandexpences);
         username = findViewById(R.id.username);
+        databaseHelper = new DatabaseHelper(this);
+
 
 
         chatsandcalls.setOnClickListener(v -> startActivity(new Intent(HomePage.this, Chats_and_Calls.class)));

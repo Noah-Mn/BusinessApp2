@@ -90,6 +90,7 @@
             <ImageView
                 android:id="@+id/tasks"
                 android:layout_width="25dp"
+                android:background="#8A01FF91"
                 android:layout_height="25dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
@@ -106,7 +107,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/chats"
+                android:src="@drawable/ic_baseline_chat_24"
                 android:contentDescription="@string/todo" />
 
             <ImageView
@@ -235,23 +236,14 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="5dp"
-                android:elevation="10dp"
-                android:orientation="horizontal">
-
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:elevation="10dp"
                     android:backgroundTint="#206201FF"
                     app:cardCornerRadius="10dp">
                 </androidx.recyclerview.widget.RecyclerView>
-
-            </LinearLayout>
 
         </LinearLayout>
 

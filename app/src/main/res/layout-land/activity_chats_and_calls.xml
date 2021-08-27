@@ -106,6 +106,7 @@
             <ImageView
                 android:id="@+id/chatsandcalls"
                 android:layout_width="25dp"
+                android:background="#8A01FF91"
                 android:layout_height="25dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
@@ -205,8 +206,8 @@
                         android:paddingStart="4dp"
                         android:paddingEnd="4dp"
                         android:text="@string/username"
-                        android:textColor="@color/black"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
 
 
                 </androidx.cardview.widget.CardView>

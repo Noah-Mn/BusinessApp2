@@ -118,8 +118,11 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:background="#8A01FF91"
                 android:src="@drawable/plan"
-                android:contentDescription="@string/todo" />
+                android:contentDescription="@string/todo"
+                android:focusable="true" />
 
             <ImageView
                 android:id="@+id/salesandexpences"

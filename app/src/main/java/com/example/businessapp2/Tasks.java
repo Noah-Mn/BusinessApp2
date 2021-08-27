@@ -2,17 +2,27 @@ package com.example.businessapp2;
 
 import android.app.SearchManager;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class Tasks extends AppCompatActivity {
     ImageView tasks, chatsandcalls, menu, projects, businessplan, invoice, salesandexpences;
     SearchView searchView;
     Button addTask;
+    RecyclerView recyclerView;
+    DatabaseHelper1 databaseHelper1;
+    ArrayList<String> name, deadline, description;
+    CustomAdapter customAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +37,18 @@ public class Tasks extends AppCompatActivity {
         salesandexpences = findViewById(R.id.salesandexpences);
         searchView = findViewById(R.id.searchView);
         addTask = findViewById(R.id.addTask);
+        recyclerView = findViewById(R.id.recyclerView);
+
+        databaseHelper1 = new DatabaseHelper1(this);
+        name = new ArrayList<>();
+        deadline = new ArrayList<>();
+        description = new ArrayList<>();
+
+        storeTasks();
+
+        customAdapter = new CustomAdapter(this, name, deadline, description);
+        recyclerView.setAdapter(customAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         addTask.setOnClickListener(v -> startActivity(new Intent(Tasks.this, NewTask.class)));
 
@@ -67,15 +89,18 @@ public class Tasks extends AppCompatActivity {
 
     private void doMySearch(String query) {
     }
-
-
-
-
-
-
-
-
-
+    void storeTasks(){
+        Cursor cursor = databaseHelper1.getdata();
+        if (cursor.getCount() == 0){
+            Toast.makeText(this, "No data to display", Toast.LENGTH_SHORT).show();
+        }else {
+            while (cursor.moveToNext()){
+                name.add(cursor.getString(0));
+                description.add(cursor.getString(1));
+                deadline.add(cursor.getString(2));
+            }
+        }
+    }
     public void onBackPressed(){
         Intent intent = new Intent(Tasks.this, HomePage.class);
         startActivity(intent);

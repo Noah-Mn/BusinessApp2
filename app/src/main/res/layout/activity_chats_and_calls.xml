@@ -102,6 +102,7 @@
             <ImageView
                 android:id="@+id/chatsandcalls"
                 android:layout_width="25dp"
+                android:background="#8A01FF91"
                 android:layout_height="25dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"

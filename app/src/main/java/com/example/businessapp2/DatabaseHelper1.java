@@ -79,8 +79,12 @@ public class DatabaseHelper1 extends SQLiteOpenHelper {
         }
     }
     public Cursor getdata(){
-        SQLiteDatabase database = this.getWritableDatabase();
-        Cursor cursor = database.rawQuery("SELECT * FROM Taskdetails", null);
+        String query = "SELECT * FROM Taskdetails";
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = null;
+        if (database != null){
+           cursor = database.rawQuery(query, null);
+        }
         return cursor;
     }
 }
