@@ -3,11 +3,13 @@ package com.example.businessapp2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SalesAndExpences extends AppCompatActivity {
     ImageView tasks, chatsandcalls, menu, projects, businessplan, invoice, salesandexpences;
+    TextView expences,sales;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +22,14 @@ public class SalesAndExpences extends AppCompatActivity {
         businessplan = findViewById(R.id.businessplan);
         invoice = findViewById(R.id.invoice);
         salesandexpences = findViewById(R.id.salesandexpences);
+        expences = findViewById(R.id.expences);
+        sales = findViewById(R.id.sales);
+
+        sales.setOnClickListener(v -> startActivity(new Intent(SalesAndExpences.this, Sales.class)));
 
         chatsandcalls.setOnClickListener(v -> startActivity(new Intent(SalesAndExpences.this, Chats_and_Calls.class)));
+
+        expences.setOnClickListener(v -> startActivity(new Intent(SalesAndExpences.this, Expences.class)));
 
         businessplan.setOnClickListener(v -> startActivity(new Intent(SalesAndExpences.this, BusinessPlan.class)));
 

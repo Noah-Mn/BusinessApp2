@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusinessApp2">
         <activity
+            android:name=".Sales"
+            android:exported="true" />
+        <activity
+            android:name=".Expences"
+            android:exported="true" />
+        <activity
             android:name=".NewProject"
             android:exported="true" />
         <activity

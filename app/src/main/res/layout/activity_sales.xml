@@ -166,48 +166,145 @@
             android:layout_marginBottom="5dp"
             android:orientation="vertical">
 
-
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="8dp"
-                android:gravity="fill_horizontal">
+                android:gravity="fill_vertical"
+                android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="111dp"
                     android:layout_height="30dp"
-                    android:backgroundTint="#59BDBDBD"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="8dp">
 
                     <TextView
                         android:id="@+id/expences"
-                        android:layout_width="100dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
                         android:textAlignment="center"
-                        android:text="Expences"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"/>
+                        android:paddingStart="10dp"
+                        android:text="Sales"
+                        android:textSize="20sp">
 
+                    </TextView>
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:backgroundTint="#59BDBDBD"
-                    android:layout_marginTop="20dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="10dp">
 
                     <TextView
-                        android:id="@+id/sales"
-                        android:layout_width="100dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Sales"
-                        android:textColor="@color/black"
-                        android:textAlignment="center"
-                        android:textSize="20sp" />
+                        android:layout_marginStart="5dp"
+                        android:text="@string/balance"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="173dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/mk_0_00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="Today"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="173dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/mk_0_00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="This Week"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="173dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/mk_0_00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="This Month"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="173dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/mk_0_00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black" />
                 </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:text="This Year"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="173dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="120dp"
+                        android:text="@string/mk_0_00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black" />
+                </androidx.cardview.widget.CardView>
 
 
 

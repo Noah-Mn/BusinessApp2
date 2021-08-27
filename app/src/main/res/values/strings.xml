@@ -70,4 +70,6 @@
     <string name="products">Products</string>
     <string name="Ongoing">Ongoing</string>
     <string name="task_name">Task Name</string>
+    <string name="balance">Current Balance</string>
+    <string name="mk_0_00">MK 0.00</string>
 </resources>
