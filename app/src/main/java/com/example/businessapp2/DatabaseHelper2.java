@@ -84,8 +84,12 @@ public class DatabaseHelper2 extends SQLiteOpenHelper {
         }
     }
     public Cursor getdata(){
+        String query = "SELECT * FROM Projectdetails";
         SQLiteDatabase database = this.getWritableDatabase();
-        Cursor cursor = database.rawQuery("SELECT * FROM Projectdetails", null);
+        Cursor cursor = null;
+        if (database != null){
+            cursor = database.rawQuery(query, null);
+        }
         return cursor;
     }
 }

@@ -107,7 +107,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/ic_baseline_chat_24"
+                android:src="@drawable/chats"
                 android:contentDescription="@string/todo" />
 
             <ImageView

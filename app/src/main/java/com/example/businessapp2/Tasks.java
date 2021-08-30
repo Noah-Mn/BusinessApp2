@@ -96,8 +96,8 @@ public class Tasks extends AppCompatActivity {
         }else {
             while (cursor.moveToNext()){
                 name.add(cursor.getString(0));
-                description.add(cursor.getString(1));
-                deadline.add(cursor.getString(2));
+                description.add(cursor.getString(6));
+                deadline.add(cursor.getString(3));
             }
         }
     }
