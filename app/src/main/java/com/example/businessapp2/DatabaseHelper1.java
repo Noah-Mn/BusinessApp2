@@ -32,10 +32,7 @@ public class DatabaseHelper1 extends SQLiteOpenHelper {
         contentValues.put("cost", cost);
         contentValues.put("description", description);
         long result = database.insert("Taskdetails", null, contentValues);
-        if (result == -1){
-            return false;
-        }
-        else return true;
+        return result != -1;
     }
     public Boolean updateTaskDetails(String name, String status, String priority, String deadline, String deliverable, String cost, String description){
         SQLiteDatabase database = this.getWritableDatabase();
@@ -51,12 +48,7 @@ public class DatabaseHelper1 extends SQLiteOpenHelper {
 
 
         long result = database.update("Taskdetails", contentValues, "name=?", new String[]{name});
-        if (result == -1){
-            return false;
-        }
-        else{
-            return true;
-        }
+            return result != -1;
         }else {
             return false;
         }
@@ -68,12 +60,7 @@ public class DatabaseHelper1 extends SQLiteOpenHelper {
 
 
             long result = database.delete("Taskdetails", "name=?", new String[]{name});
-            if (result == -1){
-                return false;
-            }
-            else{
-                return true;
-            }
+            return result != -1;
         }else {
             return false;
         }

@@ -3,7 +3,6 @@ package com.example.businessapp2;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -30,35 +29,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put("username", username);
         contentValues.put("password", password);
         long result = database.insert("user", null, contentValues);
-        if (result == -1) return false;
-            else return true;
+        return result != -1;
     }
     public boolean checkemail (String email){
         SQLiteDatabase database = this.getReadableDatabase();
         Cursor cursor = database.rawQuery("SELECT * FROM user WHERE email=? ",new String[]{email});
-        if (cursor.getCount()>0 ) return false;
-        else return true;
+        return cursor.getCount() <= 0;
     }
     public boolean checkemailpassword (String email,String password){
         SQLiteDatabase database = this.getReadableDatabase();
         Cursor cursor = database.rawQuery("SELECT * FROM user WHERE email=? AND password=?",new String[]{email,password});
-        if (cursor.getCount()>0) return true;
-        else return false;
+        return cursor.getCount() > 0;
     }
-    public String getUsername() throws SQLException{
-        String username = " ";
-        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM user WHERE username=?",new String[]{username});
-        if (cursor.moveToFirst()){
-            do {
-                username = cursor.getString(0);
-            }while (cursor.moveToNext());
-        }cursor.close();
-        return username;
-    }
+
     public Cursor getdata(){
-        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT username FROM user", null);
+        String query = "SELECT username FROM user";
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = null;
+        if (sqLiteDatabase != null){
+            cursor = sqLiteDatabase.rawQuery(query, null);
+        }
         return cursor;
     }
 }

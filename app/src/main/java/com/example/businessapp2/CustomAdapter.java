@@ -13,8 +13,10 @@ import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
-   private Context context;
-   private ArrayList name, deadline, description;
+   private final Context context;
+   private final ArrayList name;
+    private final ArrayList deadline;
+    private final ArrayList description;
 
     CustomAdapter(Context context, ArrayList name, ArrayList deadline, ArrayList description){
         this.context = context;
@@ -42,7 +44,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         return name.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView name, Deadline, textDescription;
 
